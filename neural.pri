@@ -1,4 +1,4 @@
 ## OpenNN.pri
 
-LIBS += -L$$PWD/opennn -lopennn
-INCLUDEPATH += $$PWD/opennn
+LIBS += -L$$PWD/Neural/release -lNeural
+INCLUDEPATH += $$PWD/Neural/include
