@@ -24,7 +24,7 @@ CONFIG(release) {
         DESTDIR = release
 }
 
-#include($$PWD/../opennn.pri)
+include($$PWD/../neural.pri)
 
 ### Sources
 
@@ -35,10 +35,10 @@ SOURCES += \
     src/NeuralAgent.cpp
 
 HEADERS += \
-    include/Map.hpp \
-    include/Agent.hpp \
-    include/Environment.hpp \
-    include/NeuralAgent.hpp
+    include/Engine/Map.hpp \
+    include/Engine/Agent.hpp \
+    include/Engine/Environment.hpp \
+    include/Engine/NeuralAgent.hpp
 
 
 

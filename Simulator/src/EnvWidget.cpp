@@ -4,7 +4,7 @@
 #include <QPen>
 #include <QPaintEvent>
 
-#include <Agent.hpp>
+#include <Engine/Agent.hpp>
 
 EnvWidget::EnvWidget(QWidget *parent) :
     QWidget(parent)

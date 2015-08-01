@@ -3,7 +3,8 @@
 
 #include <QPoint>
 #include <QString>
-#include <Environment.hpp>
+
+#include <Engine/Environment.hpp>
 
 namespace Engine {
     class Environment;

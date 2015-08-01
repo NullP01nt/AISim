@@ -1,8 +1,8 @@
 #ifndef NEURALAGENT_HPP
 #define NEURALAGENT_HPP
 
-#include <../opennn/neural_network.h>
-#include "Agent.hpp"
+#include <Neural/Network.hpp>
+#include <Engine/Agent.hpp>
 namespace Engine {
     class Agent;
     class NeuralAgent : public Agent
@@ -22,7 +22,7 @@ namespace Engine {
         virtual void setNNWeights(QVector<double> weights);
         virtual QVector<double>* getNNWeights(void);
     protected:
-        OpenNN::NeuralNetwork nn;
+		Neural::Network nn;
     };
 }
 

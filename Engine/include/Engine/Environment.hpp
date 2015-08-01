@@ -3,8 +3,9 @@
 
 #include <QObject>
 #include <QVector>
-#include <Agent.hpp>
-#include <Map.hpp>
+
+#include <Engine/Agent.hpp>
+#include <Engine/Map.hpp>
 
 namespace Engine {
     class Agent;

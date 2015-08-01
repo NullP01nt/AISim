@@ -2,8 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <Map.hpp>
-#include <Environment.hpp>
+#include <Engine/Map.hpp>
+#include <Engine/Environment.hpp>
 
 namespace Ui {
 class MainWindow;

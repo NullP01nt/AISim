@@ -2,7 +2,7 @@
 #define MUTABLEMAP_HPP
 
 #include <QString>
-#include <Map.hpp>
+#include <Engine/Map.hpp>
 
 class MutableMap : public Engine::Map
 {

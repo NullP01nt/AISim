@@ -1,4 +1,4 @@
-#include "NeuralAgent.hpp"
+#include <Engine/NeuralAgent.hpp>
 
 Engine::NeuralAgent::NeuralAgent() : Agent()
 {

@@ -4,9 +4,9 @@
 #include <QWidget>
 #include <QPixmap>
 
-#include <Environment.hpp>
-#include <Agent.hpp>
-#include <Map.hpp>
+#include <Engine/Environment.hpp>
+#include <Engine/Agent.hpp>
+#include <Engine/Map.hpp>
 
 #include "ColorMap.hpp"
 

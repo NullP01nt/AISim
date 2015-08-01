@@ -2,7 +2,7 @@
 #define REMOTEAGENT_HPP
 
 #include <QObject>
-#include <Agent.hpp>
+#include <Engine/Agent.hpp>
 
 class RemoteAgent : public QObject, public Engine::Agent
 {

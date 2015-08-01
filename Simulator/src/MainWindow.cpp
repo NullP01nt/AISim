@@ -1,7 +1,7 @@
 #include "MainWindow.hpp"
 #include "ui_MainWindow.h"
 
-#include <Agent.hpp>
+#include <Engine/Agent.hpp>
 #include <StudentAgent.hpp>
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow)
