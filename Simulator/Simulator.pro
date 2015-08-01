@@ -7,7 +7,7 @@ QT += core gui
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 include($$PWD/../engine.pri)
-include($$PWD/../opennn.pri)
+#include($$PWD/../opennn.pri)
 
 TEMPLATE = app
 TARGET = Simulator
