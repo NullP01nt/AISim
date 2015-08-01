@@ -24,7 +24,7 @@ CONFIG(release) {
         DESTDIR = release
 }
 
-include($$PWD/../opennn.pri)
+#include($$PWD/../opennn.pri)
 
 ### Sources
 
