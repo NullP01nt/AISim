@@ -47,12 +47,13 @@ void EnvWidget::paintEvent(QPaintEvent *event) {
     painter.drawPixmap(0,0,map_render);
 
     Engine::Agent* A = nullptr;
-    for(int aid =0; aid < env->getAgents()->size(); aid++) {
-        A = env->getAgents()->at(aid);
+    for(int aIdx =0; aIdx < env->getAgents()->size(); aIdx++) {
+        A = env->getAgents()->at(aIdx);
         if(A!=nullptr) {
             if(A->isDrawable()) {
                 painter.fillRect(A->x()*GRID_SIZE, A->y()*GRID_SIZE, GRID_SIZE, GRID_SIZE, cMap.getColor(A->getID()));
             }
         }
     }
+    event->accept();
 }

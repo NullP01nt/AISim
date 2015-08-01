@@ -74,6 +74,7 @@ void MapEditWidget::paintEvent(QPaintEvent *event) {
         for(unsigned y=0; y<=WIDG_H;y+=GRID_SIZE)
             painter.drawLine(0,y,64*GRID_SIZE,y);
     }
+    event->accept();
 }
 
 bool MapEditWidget::getValueAt(QPoint pos) {
