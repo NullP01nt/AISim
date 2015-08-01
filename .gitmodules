@@ -1,0 +1,3 @@
+[submodule "Neural"]
+	path = Neural
+	url = https://github.com/NullP01nt/libNeural

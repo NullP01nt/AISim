@@ -7,7 +7,6 @@ DEFINES += NDEBUG
 }
 
 SUBDIRS += \
-	opennn \
 	Engine \
-        Tools \
-        Simulator
+	Tools \
+	Simulator
