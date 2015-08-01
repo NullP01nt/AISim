@@ -4,7 +4,7 @@
 #include <QObject>
 #include <Engine/Agent.hpp>
 
-class RemoteAgent : public QObject, public Engine::Agent
+class RemoteAgent : public Engine::Agent
 {
     Q_OBJECT
 public:

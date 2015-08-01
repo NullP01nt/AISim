@@ -1,17 +1,26 @@
 #include <Engine/NeuralAgent.hpp>
 
-Engine::NeuralAgent::NeuralAgent() : Agent()
+namespace Engine {
+
+NeuralAgent::NeuralAgent() : Agent()
 {
+    InitNeuralNetwork();
 }
 
-Engine::NeuralAgent::NeuralAgent(unsigned _x, unsigned _y) : Agent(_x,_y) {
+NeuralAgent::NeuralAgent(unsigned _x, unsigned _y) : Agent(_x,_y) {
+    InitNeuralNetwork();
+}
+
+NeuralAgent::NeuralAgent(QPoint _pos) : Agent(_pos) {
+    InitNeuralNetwork();
+}
+
+NeuralAgent::~NeuralAgent() {
 
 }
 
-Engine::NeuralAgent::NeuralAgent(QPoint _pos) : Agent(_pos) {
+void NeuralAgent::InitNeuralNetwork() {
 
 }
-
-Engine::NeuralAgent::~NeuralAgent() {
 
 }

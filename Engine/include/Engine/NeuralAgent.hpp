@@ -1,5 +1,4 @@
-#ifndef NEURALAGENT_HPP
-#define NEURALAGENT_HPP
+#pragma once
 
 #include <Neural/Network.hpp>
 #include <Engine/Agent.hpp>
@@ -15,15 +14,15 @@ namespace Engine {
 
         QString getDesc(void) { return "NeuralAgent"; }
         bool isDrawable(void) { return false; }
-
+/*
         virtual void setNNInputs(QVector<double> inputs);
         virtual QVector<double> getNNOutputs(void);
 
         virtual void setNNWeights(QVector<double> weights);
         virtual QVector<double>* getNNWeights(void);
+        */
     protected:
-		Neural::Network nn;
+        Neural::Network nn;
+        virtual void InitNeuralNetwork(void);
     };
 }
-
-#endif // NEURALAGENT_HPP

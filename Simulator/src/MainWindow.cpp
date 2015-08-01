@@ -12,14 +12,21 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     map = new Engine::Map("env.map");
     env->setMap(map);
 
-    Engine::Agent* a = new Engine::Agent(10,10);
     StudentAgent* b = new StudentAgent(20,20);
-    env->registerAgent(a);
+    Engine::Agent* a = new Engine::Agent(10,10);
     env->registerAgent(b);
+    env->registerAgent(a);
     emit env_loaded(env);
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::on_pushButton_clicked()
+{
+   QVector<double> v = {1.0,2.0,3.0,4.0};
+
+   env->publishMessage(0,"AF",false,v);
 }

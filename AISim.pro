@@ -7,6 +7,7 @@ DEFINES += NDEBUG
 }
 
 SUBDIRS += \
+        Neural \
 	Engine \
 	Tools \
 	Simulator

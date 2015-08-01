@@ -24,6 +24,8 @@ private:
 
 signals:
     void env_loaded(Engine::Environment* env);
+private slots:
+    void on_pushButton_clicked();
 };
 
 #endif // MAINWINDOW_H

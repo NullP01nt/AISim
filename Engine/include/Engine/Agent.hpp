@@ -8,8 +8,10 @@
 
 namespace Engine {
     class Environment;
-    class Agent
+    class Agent : public QObject
     {
+        Q_OBJECT
+
     public:
         Agent(void);
         Agent(unsigned _x, unsigned _y);
@@ -25,10 +27,13 @@ namespace Engine {
         void         setX(unsigned _x);
         void         setY(unsigned _y);
 
-        void        setEnvironment(Engine::Environment* _env);
+        void         setEnvironment(Engine::Environment* _env);
+        QVector<bool> getSurroundings(void);
 
         virtual QString getDesc(void) { return "Agent"; }
         virtual bool isDrawable(void) { return false; }
+    public slots:
+        void processMessage(unsigned sender, QString msg, bool isTrainingMsg, QVector<double> &target);
     protected:
         QPoint p;
         unsigned int mID; // Currently assigned Agent ID
